@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server arduino</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action='/api/users/' method='POST'>
+            <div>
+                <input type='text' name='numSerial' placeholder='número de serie'>
+            </div>
+            <div>
+                <input type='text' name='usuario' placeholder='usuario'>
+            </div>
+            <div>
+                <input type='date' name='fechaAlta'>
+            </div>
+            <div>
+                <input type='text' name='telefono' placeholder='teléfono'>
+            </div>
+            <div>
+                <input type='text' name='email' placeholder='email'>
+            </div>
+            <div>
+                <input type='text' name='email' placeholder='email'>
+            </div>
+            <div>
+                <select className="form-control" id="status">
+                    <option>Seleccionar estado</option>
+                    <option value='Activo'>Activo</option>
+                    <option value='Inactivo'> Inactivo</option>
+                    <option value='Pendiente'>Pendiente</option>
+                </select>
+            </div>
+            <div>
+                <button>submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
